@@ -16,6 +16,7 @@ void ListPeople(const tutorial::AddressBook& address_book) {
   for (int i = 0; i < address_book.people_size(); i++) {
     const tutorial::Person& person = address_book.people(i);
 
+    cout << "My own version of google protobuf test" << endl;
     cout << "Person ID: " << person.id() << endl;
     cout << "  Name: " << person.name() << endl;
     if (person.email() != "") {
